@@ -7,7 +7,7 @@ HasImagePlaneDetails:False
 
 Images:[module_num:1|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     :\xff\xfe
-    Filter images?:\xff\xfeC\x00u\x00s\x00t\x00o\x00m\x00
+    Filter images?:\xff\xfeI\x00m\x00a\x00g\x00e\x00s\x00 \x00o\x00n\x00l\x00y\x00
     Select the rule criteria:\xff\xfea\x00n\x00d\x00 \x00(\x00f\x00i\x00l\x00e\x00 \x00d\x00o\x00e\x00s\x00 \x00c\x00o\x00n\x00t\x00a\x00i\x00n\x00 \x00"\x00B\x00 \x00-\x00 \x000\x004\x00(\x00f\x00l\x00d\x00 \x000\x000\x00"\x00)\x00
 
 Metadata:[module_num:2|svn_version:\'Unknown\'|variable_revision_number:5|show_window:False|notes:\x5B\'The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
