@@ -2,7 +2,7 @@ CellProfiler Pipeline: http://www.cellprofiler.org
 Version:4
 DateRevision:318
 GitHash:
-ModuleCount:24
+ModuleCount:25
 HasImagePlaneDetails:False
 
 Images:[module_num:1|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\'To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.\'\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
@@ -107,7 +107,55 @@ MeasureImageQuality:[module_num:5|svn_version:\'Unknown\'|variable_revision_numb
     Minimize the weighted variance or the entropy?:\xff\xfeW\x00e\x00i\x00g\x00h\x00t\x00e\x00d\x00 \x00v\x00a\x00r\x00i\x00a\x00n\x00c\x00e\x00
     Assign pixels in the middle intensity class to the foreground or the background?:\xff\xfeF\x00o\x00r\x00e\x00g\x00r\x00o\x00u\x00n\x00d\x00
 
-CorrectIlluminationCalculate:[module_num:6|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+FlagImage:[module_num:6|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+    Hidden:\xff\xfe3\x00
+    Hidden:\xff\xfe1\x00
+    Name the flag\'s category:\xff\xfeM\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Name the flag:\xff\xfeQ\x00C\x00_\x00S\x00a\x00t\x00
+    How should measurements be linked?:\xff\xfeF\x00l\x00a\x00g\x00 \x00i\x00f\x00 \x00a\x00n\x00y\x00 \x00f\x00a\x00i\x00l\x00
+    Skip image set if flagged?:\xff\xfeN\x00o\x00
+    Flag is based on:\xff\xfeW\x00h\x00o\x00l\x00e\x00-\x00i\x00m\x00a\x00g\x00e\x00 \x00m\x00e\x00a\x00s\x00u\x00r\x00e\x00m\x00e\x00n\x00t\x00
+    Select the object to be used for flagging:\xff\xfeN\x00o\x00n\x00e\x00
+    Which measurement?:\xff\xfeI\x00m\x00a\x00g\x00e\x00Q\x00u\x00a\x00l\x00i\x00t\x00y\x00_\x00P\x00e\x00r\x00c\x00e\x00n\x00t\x00M\x00a\x00x\x00i\x00m\x00a\x00l\x00_\x00D\x00A\x00P\x00I\x00
+    Flag images based on low values?:\xff\xfeN\x00o\x00
+    Minimum value:\xff\xfe0\x00.\x000\x00
+    Flag images based on high values?:\xff\xfeY\x00e\x00s\x00
+    Maximum value:\xff\xfe0\x00.\x000\x002\x00
+    Rules file location:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Rules file name:\xff\xfer\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
+    Class number:\xff\xfe
+    Hidden:\xff\xfe1\x00
+    Name the flag\'s category:\xff\xfeM\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Name the flag:\xff\xfeQ\x00C\x00_\x00B\x00l\x00u\x00r\x00r\x00y\x001\x00
+    How should measurements be linked?:\xff\xfeF\x00l\x00a\x00g\x00 \x00i\x00f\x00 \x00a\x00n\x00y\x00 \x00f\x00a\x00i\x00l\x00
+    Skip image set if flagged?:\xff\xfeN\x00o\x00
+    Flag is based on:\xff\xfeR\x00u\x00l\x00e\x00s\x00
+    Select the object to be used for flagging:\xff\xfeN\x00o\x00n\x00e\x00
+    Which measurement?:\xff\xfeN\x00o\x00n\x00e\x00
+    Flag images based on low values?:\xff\xfeY\x00e\x00s\x00
+    Minimum value:\xff\xfe0\x00.\x000\x00
+    Flag images based on high values?:\xff\xfeY\x00e\x00s\x00
+    Maximum value:\xff\xfe1\x00.\x000\x00
+    Rules file location:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Rules file name:\xff\xfeq\x00c\x00_\x00b\x00l\x00u\x00r\x00r\x00y\x00_\x00r\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
+    Class number:\xff\xfe2\x00
+    Hidden:\xff\xfe1\x00
+    Name the flag\'s category:\xff\xfeM\x00e\x00t\x00a\x00d\x00a\x00t\x00a\x00
+    Name the flag:\xff\xfeQ\x00C\x00_\x00B\x00l\x00u\x00r\x00r\x00y\x002\x00
+    How should measurements be linked?:\xff\xfeF\x00l\x00a\x00g\x00 \x00i\x00f\x00 \x00a\x00n\x00y\x00 \x00f\x00a\x00i\x00l\x00
+    Skip image set if flagged?:\xff\xfeN\x00o\x00
+    Flag is based on:\xff\xfeR\x00u\x00l\x00e\x00s\x00
+    Select the object to be used for flagging:\xff\xfeN\x00o\x00n\x00e\x00
+    Which measurement?:\xff\xfeN\x00o\x00n\x00e\x00
+    Flag images based on low values?:\xff\xfeY\x00e\x00s\x00
+    Minimum value:\xff\xfe0\x00.\x000\x00
+    Flag images based on high values?:\xff\xfeY\x00e\x00s\x00
+    Maximum value:\xff\xfe1\x00.\x000\x00
+    Rules file location:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
+    Rules file name:\xff\xfeq\x00c\x00_\x00b\x00l\x00u\x00r\x00r\x00y\x00_\x00r\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
+    Class number:\xff\xfe3\x00
+
+CorrectIlluminationCalculate:[module_num:7|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:\xff\xfeD\x00A\x00P\x00I\x00
     Name the output image:\xff\xfeI\x00l\x00l\x00u\x00m\x00D\x00A\x00P\x00I\x00
     Select how the illumination function is calculated:\xff\xfeR\x00e\x00g\x00u\x00l\x00a\x00r\x00
@@ -132,13 +180,13 @@ CorrectIlluminationCalculate:[module_num:6|svn_version:\'Unknown\'|variable_revi
     Maximum number of iterations:\xff\xfe4\x000\x00
     Residual value for convergence:\xff\xfe0\x00.\x000\x000\x001\x00
 
-CorrectIlluminationApply:[module_num:7|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+CorrectIlluminationApply:[module_num:8|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:\xff\xfeD\x00A\x00P\x00I\x00
     Name the output image:\xff\xfeC\x00o\x00r\x00r\x00D\x00A\x00P\x00I\x00
     Select the illumination function:\xff\xfeI\x00l\x00l\x00u\x00m\x00D\x00A\x00P\x00I\x00
     Select how the illumination function is applied:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
 
-CorrectIlluminationCalculate:[module_num:8|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+CorrectIlluminationCalculate:[module_num:9|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:\xff\xfeE\x00D\x00U\x00
     Name the output image:\xff\xfeI\x00l\x00l\x00u\x00m\x00E\x00D\x00U\x00
     Select how the illumination function is calculated:\xff\xfeR\x00e\x00g\x00u\x00l\x00a\x00r\x00
@@ -163,13 +211,13 @@ CorrectIlluminationCalculate:[module_num:8|svn_version:\'Unknown\'|variable_revi
     Maximum number of iterations:\xff\xfe4\x000\x00
     Residual value for convergence:\xff\xfe0\x00.\x000\x000\x001\x00
 
-CorrectIlluminationApply:[module_num:9|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+CorrectIlluminationApply:[module_num:10|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:\xff\xfeE\x00D\x00U\x00
     Name the output image:\xff\xfeC\x00o\x00r\x00r\x00E\x00D\x00U\x00
     Select the illumination function:\xff\xfeI\x00l\x00l\x00u\x00m\x00E\x00D\x00U\x00
     Select how the illumination function is applied:\xff\xfeD\x00i\x00v\x00i\x00d\x00e\x00
 
-CorrectIlluminationCalculate:[module_num:10|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+CorrectIlluminationCalculate:[module_num:11|svn_version:\'Unknown\'|variable_revision_number:2|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:\xff\xfec\x00a\x00s\x00p\x00a\x00s\x00e\x003\x00
     Name the output image:\xff\xfeI\x00l\x00l\x00u\x00m\x00c\x00a\x00s\x00p\x00a\x00s\x00e\x003\x00
     Select how the illumination function is calculated:\xff\xfeB\x00a\x00c\x00k\x00g\x00r\x00o\x00u\x00n\x00d\x00
@@ -194,13 +242,13 @@ CorrectIlluminationCalculate:[module_num:10|svn_version:\'Unknown\'|variable_rev
     Maximum number of iterations:\xff\xfe4\x000\x00
     Residual value for convergence:\xff\xfe0\x00.\x000\x000\x001\x00
 
-CorrectIlluminationApply:[module_num:11|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+CorrectIlluminationApply:[module_num:12|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:\xff\xfec\x00a\x00s\x00p\x00a\x00s\x00e\x003\x00
     Name the output image:\xff\xfeC\x00o\x00r\x00r\x00c\x00a\x00s\x00p\x00a\x00s\x00e\x003\x00
     Select the illumination function:\xff\xfeI\x00l\x00l\x00u\x00m\x00c\x00a\x00s\x00p\x00a\x00s\x00e\x003\x00
     Select how the illumination function is applied:\xff\xfeS\x00u\x00b\x00t\x00r\x00a\x00c\x00t\x00
 
-IdentifyPrimaryObjects:[module_num:12|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:False|wants_pause:False]
+IdentifyPrimaryObjects:[module_num:13|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:False|wants_pause:False]
     Select the input image:\xff\xfeD\x00A\x00P\x00I\x00p\x00r\x00o\x00b\x00
     Name the primary objects to be identified:\xff\xfeD\x00A\x00P\x00I\x00
     Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x005\x00,\x004\x000\x00
@@ -235,7 +283,7 @@ IdentifyPrimaryObjects:[module_num:12|svn_version:\'Unknown\'|variable_revision_
     # of deviations:\xff\xfe2\x00.\x000\x00
     Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
 
-IdentifyPrimaryObjects:[module_num:13|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+IdentifyPrimaryObjects:[module_num:14|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input image:\xff\xfeC\x00o\x00r\x00r\x00D\x00A\x00P\x00I\x00
     Name the primary objects to be identified:\xff\xfeN\x00u\x00c\x00
     Typical diameter of objects, in pixel units (Min,Max):\xff\xfe1\x005\x00,\x006\x000\x00
@@ -270,7 +318,7 @@ IdentifyPrimaryObjects:[module_num:13|svn_version:\'Unknown\'|variable_revision_
     # of deviations:\xff\xfe2\x00.\x000\x00
     Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
 
-IdentifySecondaryObjects:[module_num:14|svn_version:\'Unknown\'|variable_revision_number:10|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+IdentifySecondaryObjects:[module_num:15|svn_version:\'Unknown\'|variable_revision_number:10|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the input objects:\xff\xfeN\x00u\x00c\x00
     Name the objects to be identified:\xff\xfeC\x00e\x00l\x00l\x00
     Select the method to identify the secondary objects:\xff\xfeP\x00r\x00o\x00p\x00a\x00g\x00a\x00t\x00i\x00o\x00n\x00
@@ -299,19 +347,19 @@ IdentifySecondaryObjects:[module_num:14|svn_version:\'Unknown\'|variable_revisio
     # of deviations:\xff\xfe2\x00.\x000\x00
     Thresholding method:\xff\xfeO\x00t\x00s\x00u\x00
 
-IdentifyTertiaryObjects:[module_num:15|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+IdentifyTertiaryObjects:[module_num:16|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the larger identified objects:\xff\xfeC\x00e\x00l\x00l\x00
     Select the smaller identified objects:\xff\xfeN\x00u\x00c\x00
     Name the tertiary objects to be identified:\xff\xfeC\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
     Shrink smaller object prior to subtraction?:\xff\xfeY\x00e\x00s\x00
 
-MeasureObjectSizeShape:[module_num:16|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+MeasureObjectSizeShape:[module_num:17|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select objects to measure:\xff\xfeN\x00u\x00c\x00
     Select objects to measure:\xff\xfeC\x00e\x00l\x00l\x00
     Select objects to measure:\xff\xfeC\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
     Calculate the Zernike features?:\xff\xfeN\x00o\x00
 
-FilterObjects:[module_num:17|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+FilterObjects:[module_num:18|svn_version:\'Unknown\'|variable_revision_number:8|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the objects to filter:\xff\xfeN\x00u\x00c\x00
     Name the output objects:\xff\xfeF\x00i\x00l\x00t\x00e\x00r\x00e\x00d\x00N\x00u\x00c\x00
     Select the filtering mode:\xff\xfeM\x00e\x00a\x00s\x00u\x00r\x00e\x00m\x00e\x00n\x00t\x00s\x00
@@ -343,11 +391,11 @@ FilterObjects:[module_num:17|svn_version:\'Unknown\'|variable_revision_number:8|
     Select additional object to relabel:\xff\xfeC\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
     Name the relabeled objects:\xff\xfeF\x00i\x00l\x00t\x00e\x00r\x00e\x00d\x00C\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
 
-MeasureObjectSizeShape:[module_num:18|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+MeasureObjectSizeShape:[module_num:19|svn_version:\'Unknown\'|variable_revision_number:1|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select objects to measure:\xff\xfeF\x00i\x00l\x00t\x00e\x00r\x00e\x00d\x00N\x00u\x00c\x00
     Calculate the Zernike features?:\xff\xfeN\x00o\x00
 
-MeasureObjectIntensity:[module_num:19|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+MeasureObjectIntensity:[module_num:20|svn_version:\'Unknown\'|variable_revision_number:3|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Hidden:\xff\xfe3\x00
     Select an image to measure:\xff\xfeC\x00o\x00r\x00r\x00E\x00D\x00U\x00
     Select an image to measure:\xff\xfeC\x00o\x00r\x00r\x00c\x00a\x00s\x00p\x00a\x00s\x00e\x003\x00
@@ -356,7 +404,7 @@ MeasureObjectIntensity:[module_num:19|svn_version:\'Unknown\'|variable_revision_
     Select objects to measure:\xff\xfeF\x00i\x00l\x00t\x00e\x00r\x00e\x00d\x00C\x00e\x00l\x00l\x00
     Select objects to measure:\xff\xfeF\x00i\x00l\x00t\x00e\x00r\x00e\x00d\x00C\x00y\x00t\x00o\x00p\x00l\x00a\x00s\x00m\x00
 
-OverlayOutlines:[module_num:20|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+OverlayOutlines:[module_num:21|svn_version:\'Unknown\'|variable_revision_number:4|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Display outlines on a blank image?:\xff\xfeY\x00e\x00s\x00
     Select image on which to display outlines:\xff\xfeN\x00o\x00n\x00e\x00
     Name the output image:\xff\xfeO\x00u\x00t\x00l\x00i\x00n\x00e\x00s\x00
@@ -368,7 +416,7 @@ OverlayOutlines:[module_num:20|svn_version:\'Unknown\'|variable_revision_number:
     Select outline color:\xff\xfer\x00e\x00d\x00
     Select objects to display:\xff\xfeF\x00i\x00l\x00t\x00e\x00r\x00e\x00d\x00C\x00e\x00l\x00l\x00
 
-DisplayDataOnImage:[module_num:21|svn_version:\'Unknown\'|variable_revision_number:6|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+DisplayDataOnImage:[module_num:22|svn_version:\'Unknown\'|variable_revision_number:6|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Display object or image measurements?:\xff\xfeO\x00b\x00j\x00e\x00c\x00t\x00
     Select the input objects:\xff\xfeF\x00i\x00l\x00t\x00e\x00r\x00e\x00d\x00N\x00u\x00c\x00
     Measurement to display:\xff\xfeN\x00u\x00m\x00b\x00e\x00r\x00_\x00O\x00b\x00j\x00e\x00c\x00t\x00_\x00N\x00u\x00m\x00b\x00e\x00r\x00
@@ -385,7 +433,7 @@ DisplayDataOnImage:[module_num:21|svn_version:\'Unknown\'|variable_revision_numb
     Color map scale:\xff\xfeU\x00s\x00e\x00 \x00t\x00h\x00i\x00s\x00 \x00i\x00m\x00a\x00g\x00e\x00\'\x00s\x00 \x00m\x00e\x00a\x00s\x00u\x00r\x00e\x00m\x00e\x00n\x00t\x00 \x00r\x00a\x00n\x00g\x00e\x00
     Color map range:\xff\xfe0\x00.\x000\x00,\x001\x00.\x000\x00
 
-SaveImages:[module_num:22|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+SaveImages:[module_num:23|svn_version:\'Unknown\'|variable_revision_number:13|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the type of image to save:\xff\xfeI\x00m\x00a\x00g\x00e\x00
     Select the image to save:\xff\xfeO\x00u\x00t\x00l\x00i\x00n\x00e\x00s\x00_\x00n\x00r\x00
     Select method for constructing file names:\xff\xfeF\x00r\x00o\x00m\x00 \x00i\x00m\x00a\x00g\x00e\x00 \x00f\x00i\x00l\x00e\x00n\x00a\x00m\x00e\x00
@@ -403,7 +451,7 @@ SaveImages:[module_num:22|svn_version:\'Unknown\'|variable_revision_number:13|sh
     Create subfolders in the output folder?:\xff\xfeN\x00o\x00
     Base image folder:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
 
-ExportToSpreadsheet:[module_num:23|svn_version:\'Unknown\'|variable_revision_number:12|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+ExportToSpreadsheet:[module_num:24|svn_version:\'Unknown\'|variable_revision_number:12|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Select the column delimiter:\xff\xfeC\x00o\x00m\x00m\x00a\x00 \x00(\x00"\x00,\x00"\x00)\x00
     Add image metadata columns to your object data file?:\xff\xfeY\x00e\x00s\x00
     Select the measurements to export:\xff\xfeY\x00e\x00s\x00
@@ -426,7 +474,7 @@ ExportToSpreadsheet:[module_num:23|svn_version:\'Unknown\'|variable_revision_num
     File name:\xff\xfeD\x00A\x00T\x00A\x00.\x00c\x00s\x00v\x00
     Use the object name for the file name?:\xff\xfeY\x00e\x00s\x00
 
-ExportToDatabase:[module_num:24|svn_version:\'Unknown\'|variable_revision_number:27|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
+ExportToDatabase:[module_num:25|svn_version:\'Unknown\'|variable_revision_number:27|show_window:False|notes:\x5B\x5D|batch_state:array(\x5B\x5D, dtype=uint8)|enabled:True|wants_pause:False]
     Database type:\xff\xfeS\x00Q\x00L\x00i\x00t\x00e\x00
     Database name:\xff\xfeD\x00e\x00f\x00a\x00u\x00l\x00t\x00D\x00B\x00
     Add a prefix to table names?:\xff\xfeY\x00e\x00s\x00
