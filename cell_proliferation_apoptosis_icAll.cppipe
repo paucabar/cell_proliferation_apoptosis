@@ -156,7 +156,7 @@ FlagImage:[module_num:6|svn_version:\'Unknown\'|variable_revision_number:4|show_
     Flag images based on low values?:\xff\xfeN\x00o\x00
     Minimum value:\xff\xfe0\x00.\x000\x00
     Flag images based on high values?:\xff\xfeY\x00e\x00s\x00
-    Maximum value:\xff\xfe0\x00.\x000\x002\x00
+    Maximum value:\xff\xfe0\x00.\x001\x00
     Rules file location:\xff\xfeE\x00l\x00s\x00e\x00w\x00h\x00e\x00r\x00e\x00.\x00.\x00.\x00\x7C\x00
     Rules file name:\xff\xfer\x00u\x00l\x00e\x00s\x00.\x00t\x00x\x00t\x00
     Class number:\xff\xfe
