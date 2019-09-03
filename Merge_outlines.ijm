@@ -57,8 +57,87 @@ for (i=0; i<tiffArray.length; i++) {
 
 wellName=newArray(nWells);
 imagesxwell = (tiffFiles / nWells);
-imagesxfield = (tiffFiles / nFields);
 fieldsxwell = nFields / nWells;
 for (i=0; i<nWells; i++) {
 	wellName[i]=well[i*imagesxwell];
 }
+
+Array.sort(list1);
+tifFiles=0;
+
+//count the number of TIF files in dir1
+for (i=0; i<list1.length; i++) {
+	if (endsWith(list1[i], "tif")) {
+		tifFiles++;
+	}
+}
+
+//check that  dir1 contains TIF files
+if (tifFiles==0) {
+	beep();
+	exit("No TIF files")
+}
+
+//create a an array containing only the names of the TIF files in dir1
+tifArray=newArray(tifFiles);
+count=0;
+for (i=0; i<list1.length; i++) {
+	if (endsWith(list1[i], "tif")) {
+		tifArray[count]=list1[i];
+		count++;
+	}
+}
+
+imagesxfield=0;
+change=false;
+field0=substring(tifArray[0],11,14);
+while (!change) {
+	imagesxfield++;
+	field1=substring(tifArray[imagesxfield],11,14);
+	if (field0!=field1) {
+		change=true;
+	}
+}
+
+
+//channels
+channelsArray=newArray(imagesxfield);
+for (i=0; i<imagesxfield; i++) {
+	index1=indexOf(tifArray[i], "wv");
+	index2=indexOf(tifArray[i], ".tif");
+	channelsArray[i]=substring(tifArray[i], index1+3, index2);
+}
+
+//dialog
+Dialog.create("Montage");
+Dialog.addChoice("Well", wellName);
+Dialog.addChoice("Channel", channelsArray);
+Dialog.show();
+selectWell=Dialog.getChoice();
+selectChannel=Dialog.getChoice();
+
+//start image
+for (i=0; i<imagesxfield; i++) {
+	if (selectChannel==channelsArray[i]) {
+		startImage=i+1;
+	}
+}
+
+//import
+run("Image Sequence...", "open=["+dir1+"] file=["+selectWell+"] sort");
+rename("raw_sequence_all");
+Stack.getDimensions(width, height, channels, slices, frames);
+run("Make Substack...", "delete slices="+startImage+"-"+slices+"-"+imagesxfield);
+run("Enhance Contrast", "saturated=0.1 normalize");
+run("RGB Color");
+run("8-bit Color", "number=256");
+rename("raw_sequence");
+close("raw_sequence_all");
+run("Image Sequence...", "open=["+dir2+"] file=["+selectWell+"] sort");
+rename("outlines_sequence");
+run("8-bit Color", "number=256");
+
+//merge
+run("Merge Channels...", "c1=raw_sequence c2=outlines_sequence create");
+rename(selectWell);
+run("Channels Tool...");
