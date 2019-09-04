@@ -128,7 +128,7 @@ run("Image Sequence...", "open=["+dir1+"] file=["+selectWell+"] sort");
 rename("raw_sequence_all");
 Stack.getDimensions(width, height, channels, slices, frames);
 run("Make Substack...", "delete slices="+startImage+"-"+slices+"-"+imagesxfield);
-run("Enhance Contrast", "saturated=0.1 normalize");
+run("Enhance Contrast", "saturated=0.1 normalize process_all");
 run("RGB Color");
 run("8-bit Color", "number=256");
 rename("raw_sequence");
